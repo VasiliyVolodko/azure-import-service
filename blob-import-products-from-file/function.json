@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myInputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "uploaded/{name}.csv",
+      "connection": ""
+    },
+    {
+      "name": "myOutputBlob",
+      "type": "blob",
+      "direction": "out",
+      "path": "parsed/{name}.json",
+      "connection": ""
+    }
+  ],
+  "scriptFile": "../dist/blob-import-products-from-file/index.js"
+}
